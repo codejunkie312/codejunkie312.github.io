@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CheatSheet 1.0</title>
+        <link rel="stylesheet" href="../styles/css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <li><a class= "home" href="../index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="../front-end.html">Font-End</a></li>
+                <li><a href="../back-end.html">Back-End</a></li>
+                <li><a href="../os.html">OS</a></li>
+            </nav>
+        </header>
+    <div class="table">
+        <table>
+                <thead>
+                    <tr>
+                        <th>Property/Concept</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="call">Concept(specificity)</td>
+                        <td class="details">specificity is in this order in this order !important>id>class>tag</td>
+                    </tr>
+                    <tr>
+                        <td class="call">:link</td>
+                        <td class="details">is a css pseudo-class state to define a styling for unvisited clicked links</td>
+                    </tr>
+                    <tr>
+                        <td class="call">:visited</td>
+                        <td class="details">is a css pseudo-class state to define a styling for already clicked links</td>
+                    </tr>
+                    <tr>
+                        <td class="call">:hover</td>
+                        <td class="details">is a css pseudo-class state if added in front of a selector will create a different effect depending on it's content from the selector without it, if hover over the element on page</td>
+                    </tr>
+                    <tr>
+                        <td class="call">:active</td>
+                        <td class="details">is a css pseudo-class state if added in front of a selector will create a different effect for clicking on the element and <strong>pseudo-class and the three before it should be used in the order they are mentioned in this table</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank">transition</a></td>
+                        <td class="details">a property to be used in pseudo-class selectors like the one mentioned before this example: "transition: margin-right 2s;", "transition: margin-right 2s .5s;", "transition: margin-right 2s ease-in-out;", "transition: margin-right 2s ease-in-out .5s;", "transition: margin-right 2s, color 1s;", "transition: all 1s ease-out;" <strong>Can also be used in none pseudo selector version to ease off the effect transition</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="call">cursor</td>
+                        <td class="details">a property to define how the cursor looks when hovering the selector element and it can the following values: "pointer", "cursor", "default"</td>
+                    </tr>
+                    <tr>
+                        <td class="call">margin</td>
+                        <td class="details">Creates space between elements if there are any near container otherwise doesn't do anything</td>
+                    </tr>
+                    <tr>
+                        <td class="call">padding</td>
+                        <td class="details">is a property and is the area right after content box and creates spacing between containers because it increase the size of the box if max-width/height is not defined in the parent container</td>
+                    </tr>
+                    <tr>
+                        <td class="call">font-family</td>
+                        <td class="details">a property to define fonts to use and can take in multiple values and respects the order of the fonts mentioned, and it is good practice to input fallback fonts in case the user doesn't have the font installed in their machine with "serif" and "sans-serif" being the final fallback fonts</td>
+                    </tr>
+                    <tr>
+                        <td class="call">font-size</td>
+                        <td class="details">a property to define the size of text that will be inputed within the selector and if not inputed will revert to the default value or it will inherit from teh parent containers</td>
+                    </tr>
+                    <tr>
+                        <td class="call">font-weight</td>
+                        <td class="details">a property to define text thickness, ether a value can be inputed or a keyword with normal = 400 and cold = 700 and value is betwen 0 to 1000 and it is good practice to input value in increments of 100</td>
+                    </tr>
+                    <tr>
+                        <td class="call">text-decoration</td>
+                        <td class="details">a property to define text decoration for the selector elements takes multiple values seperated by space from among (underline, none, inherit, unset) and (dotted, solid) plus a color at the end (optional) this can be inputed in one single line or seperated between text-decoration-line, text-decoration-color, text-decoration-style, text-decoration-thickness</td>
+                    </tr>
+                    <tr>
+                        <td class="call">background-color</td>
+                        <td class="details">a property to define the background color of a container the values can ether be keyword colors which are 144 or a hex value #FFFFFF with each pair of number defining RGB values and also it can take rgb(0,0,0) with each value going from 0 to 255 or hsl which stands for hue, saturation and lighting with first value being a value between 0 and 360 and second and third value being percentages hsl(320, 50%, 90%) and all of these values can take a forth element which is called an alpha element which defines the opacity of the color and it is a number that starts from 0 to 1 rgba(a,b,c,0.8) or hsla(a,b,c,0.5) or to hex value by adding a forth pair </td>
+                    </tr>
+                    <tr>
+                        <td class="call">border</td>
+                        <td class="details">a property to define the border and it take three values and in this order styling (dotted, solid,...etc) and thickness in the form of a number (2px) and color of the border</td>
+                    </tr>
+                    <tr>
+                        <td class="call">border-radius</td>
+                        <td class="details">a property to define the shape of the corners of the border and it can take a value or a percentage with 50% being a perfect circle and 100% an oval shape</td>
+                    </tr>
+                    <tr>
+                        <td class="call">box-shadow</td>
+                        <td class="details">a property to define the shadow behind the container, and can take mutilple methodes of inputs read on it in mozilla, but the most used is pixels for each of the four corners of the box in clock wise order starting from top and lastly a color</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank">float</a></td>
+                        <td class="details">this is a property that enables the content to float around the containing box depending on the value it recieves.</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before" target="_blank">::before</a></td>
+                        <td class="details">a pseudo-class that is used usually with the content property to add logos before the content of the element and ::after acts the same way and is used to add logos after content</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content" target="_blank">content</a></td>
+                        <td class="details">is a property that add content ether before or after in the content section of the element using the pseudo-classes ::before and ::after and this content can be anything(text,pic,....etc)</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align" target="_blank">vertical-align</a></td>
+                        <td class="details">is a property that can be used vertically position the element selected click to see the values it can take and how they display</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container" target="_blank">display: flex;</a></td>
+                        <td class="details">flex is a display value that utilizes a column grid system to position items within a page and it breaks up to flex container and within it flex items and these two take different properties to be deisgned please visit link to know more </td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="_blank">justify-content</a></td>
+                        <td class="details">a property usually used in flex-items in order to define how they position inside their flex-container while it shrinks and expands depending on user screen size</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" target="_blank">align-items</a></td>
+                        <td class="details">is a property typically used with flex-items in order to alter their vertical positioning and it takes multiple values please read up in the link provide to understand the behaviour of each one</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" target="_blank">flex-grow</a></td>
+                        <td class="details">is a property that is used on flex-items in order to define how much they grow as the screen shrinks and expands and it takes unitless values (default value is 0)</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink" target="_blank">flex-shrink</a></td>
+                        <td class="details">is a property that is used on flex-items in order to define how much they shrink as the screen shrinks and it takes unitless values (default value is 1)</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis" target="_blank">flex-basis</a></td>
+                        <td class="details">is a property that is used on flex-items in order to define the width the item is shrinking from</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" target="_blank">flex</a></td>
+                        <td class="details">is a property that is used on flex-items and it is used to define the values for flex-grow/flex-shrink/flex-basis all in one line</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap" target="_blank">flex-wrap</a></td>
+                        <td class="details">is a property that is used on flex-containers and defines items react inside the container when they can't fit within it and it can take three values: wrap, wrap-reverse, nowrap(default)</td>
+                    </tr>
+                    <tr>
+                        <td class="call"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content" target="_blank">align-content</a></td>
+                        <td class="details">is a property that is used on flex-containers in order to define how the items group when flex-wrap is used</td>
+                    </tr>
+                </tbody>
+        </table>
+    </div>
+    </body>
+</html>
